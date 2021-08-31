@@ -1,6 +1,6 @@
 let btn1 = document.querySelector('#cadastra')
 btn1.addEventListener('click', function (event) {
-
+  event.preventDefault()
 
   let img = document.getElementById("img").value
   let nome = document.getElementById("nome").value
