@@ -1,5 +1,5 @@
 let btn1 = document.querySelector('#cadastra')
-btn1.addEventListenner('click', function (event) {
+btn1.addEventListener('click', function (event) {
 
 
   let img = document.getElementById("img").value
