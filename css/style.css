@@ -155,6 +155,11 @@ button.btn:hover{
    background-color: rgba(255, 255, 255, 0.52);
 }
 
+.flex-materias > div:hover{
+    transform: scale(0.7);
+    transition-duration:  0.3s;
+}
+
 .finalizado{
     background-color: #202020;
     border-radius: 
@@ -233,6 +238,13 @@ footer {
     
 }
 
+.github:hover{
+   width: 70px;
+   background-color: #49383878;
+   border-radius: 15px;
+}
+    
+
 .google{
     margin-top: 15px;
     width: 50px;
@@ -240,12 +252,24 @@ footer {
     
 }
 
+.google:hover{
+    width: 70px;
+    background-color: #49383878;
+    border-radius: 15px;
+ }
+
 .linkedin{
     margin-top: 15px;
     width: 50px;
     height: auto;
     
 }
+
+.linkedin:hover{
+    width: 70px;
+    background-color: #49383878;
+    border-radius: 15px;
+ }
 
 
 .img-Perfil{
