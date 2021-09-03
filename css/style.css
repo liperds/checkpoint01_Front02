@@ -8,8 +8,10 @@
   
 }
 
+/* CABEÇALHO */
+
 header{
-    position: fixed;
+    position: fixed; 
 }
 
 .navbar-brand{
@@ -20,7 +22,8 @@ header{
 
 
 p {
-    text-indent: 1.5em;
+    text-indent: 1.5em; /* Identação do parágrafo 1.5em */
+    
 }
 
 img {
@@ -32,8 +35,8 @@ video{
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100%;/* Tamanho minimo da largura 100% */
+    min-height: 100%; /* Tamanho minimo da altura 100% */
     width: auto;
     height: auto;
     z-index: -100;
@@ -65,6 +68,7 @@ label{
 
 }
 
+/* FORMULÁRIO CADASTRA FILME */
 .cadastrar__container {
     min-height: 400px;
     width: 300px;
