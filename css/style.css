@@ -121,6 +121,10 @@ button.btn:hover{
   background-color:#f2b6d7;
 }
 
+button.navbar-toggler:hover {
+    background-color: #fa08087c;
+}
+
 
 .logof{
     width: 30px;
