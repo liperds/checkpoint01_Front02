@@ -7,6 +7,7 @@ btn1.addEventListener('click', function (event) {
   let descricao = document.getElementById("descricao").value
 
   const div = document.createElement('div')
+ /*  div.classList.add('cadastra_filme') */
                    div.innerHTML = `
                                    <p class="finalizado">Filme</p>
                                    <h4>${nome}</h4>

@@ -55,6 +55,8 @@ label{
 }
 
 
+
+
 .main_container {
     
     display: flex;
@@ -64,6 +66,8 @@ label{
     /* background: linear-gradient(120deg, #fa08087c, #4bafa59b); */
     justify-content: center;
     align-items: center;
+    margin-bottom: 70px;
+    background-size: cover;
     
 
 }
@@ -321,4 +325,5 @@ img.chat {
     width: 220px;
     border-radius: 30px;
 }
+
 
