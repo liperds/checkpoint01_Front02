@@ -24,9 +24,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Cadastro Filmes</title>
   </head>
+
   <body>
 
-    <!-- nav  -->
+    <!-- INICIO NAV  -->
     <nav class="navbar navbar-dark bg-dark" style="background-color: #202020;">
         <i><img class="logof" src="./img/filme.png" alt=""></i>
         <a class="navbar-brand" style="color: white" href="./index.html">Filmes</a>
@@ -48,11 +49,12 @@
           
         </div>
       </nav>
+      <!-- FIM NAV  -->
 
     <!--Main Conteinar -->
     <main class="main_container">
     
-        <!-- BOX FORM -->
+        <!-- INICIO DIV CADASTRAR FILME -->
         <div class="cadastrar__container">
           <!-- DIV Titulo -->
           <div>
@@ -82,10 +84,10 @@
             <!-- DIV BOTÕES -->
           </form>
         </div>
-       <!-- BOX FORM -->
+       <!-- FIM DIV CADASTRAR FILME -->
 
 
-       <!-- CARDS FILME EXEMPLO -->
+       <!--INICIO CARDS FILME EXEMPLO -->
         <section id="content" class="flex-materias">
             <div class="div-cards">
                 <p class="finalizado">Filme</p>
@@ -112,9 +114,38 @@
                 <p>Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema.</p>
               </div>
           </section> 
-        <!-- CARDS FILME EXEMPLO -->
+        <!-- FIM CARDS FILME EXEMPLO -->
 
-        <a href="sobre.html"><img src="./img/wpp.png" alt="" class="chat"></a>
+        
+                
+        <!-- Início Form Contato -->
+        <div id="formContato" class="form-contato">
+          <a id="fecharForm" href="#" onclick="fecharForm()">[ X ]</a>
+        <h2>Contato</h2>
+        <form class="column-flex">
+          <div class="item-form">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+          </div>
+          <div class="item-form">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+          </div>
+          <div class="item-form">
+            <label for="mensagem">Mensagem:</label>
+            <textarea placeholder="Digite sua mensagem" id="mensagem" name="mensagem" rows="5" cols="33"
+              maxlength="500"></textarea>
+          </div>
+          <button class="btn-contato" type="submit">Enviar</button>
+        </form>
+      </div>
+      <!-- Fim Form Contato -->
+        
+       
+
+        <!-- INICIO BOTÃO WHATSAPP PARA ABRIR CONTATO FORM -->
+        <a href="#" onclick="mostrarForm()"><img src="./img/contato.png" alt="" class="chat"></a>
+        <!-- FIM BOTÃO WHATSAPP PARA ABRIR CONTATO FORM -->     
     </main>
 
     <!-- RODAPÉ -->

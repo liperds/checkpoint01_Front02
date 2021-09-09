@@ -18,3 +18,15 @@ btn1.addEventListener('click', function (event) {
 
 
 })
+
+
+
+// a função mostrarForm abre o campo para inserção dos dados no formulário de contato
+function mostrarForm() {
+  document.getElementById('formContato').style.display='block';
+}
+
+// a função fechar fecha o formulário de co
+function fecharForm() {
+    document.getElementById('formContato').style.display='none';
+}
