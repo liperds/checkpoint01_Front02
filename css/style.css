@@ -1,4 +1,4 @@
-
+/* Aplicação de boas práticas, fonte e reset do posicionamento do body */
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Oswald:wght@500;700&display=swap');
 *{
@@ -7,12 +7,10 @@
     box-sizing: border-box;
     font-family: sans-serif;
     font-family: var(--font-normal); /* 'Open Sans', sans-serif; */
-    scroll-behavior: smooth;
-        
-  
+    scroll-behavior: smooth; 
 }
 
-
+/* Definição de tamanho, cores e fontes do elemento raiz do documento */
 :root {
     --ideal-viewport-width: 1600;
     --max-width: 1600px;
@@ -27,71 +25,68 @@
     --font-normal: 'DM Sans', sans-serif;
 }
 
-/* CABEÇALHO */
-
+/* Posição do cabeçalho */
 header{
     position: fixed; 
 }
 
+/* Transformação da fonte para letras maiúsculas e em negrito */
 .navbar-brand{
     
     text-transform: uppercase;
     font-weight: bold;
 }
 
-
+/* Identação do parágrafo 1.5em */
 p {
-    text-indent: 1.5em; /* Identação do parágrafo 1.5em */
-    
+    text-indent: 1.5em;    
 }
 
+/* Tamanho da imagem */
 img {
     width: 200px;
     height: 310px;
 }
 
+/* Posição e tamanho definido do vídeo */
 video{
     position: fixed;
     top: 50%;
     left: 50%;
-    min-width: 100%;/* Tamanho minimo da largura 100% */
+    min-width: 100%; /* Tamanho minimo da largura 100% */
     min-height: 100%; /* Tamanho minimo da altura 100% */
     width: auto;
     height: auto;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    
+    transform: translateX(-50%) translateY(-50%);   
 }
 
+/* Definição de cor, margin e fonte para a label */
 label{
     color: #0b0c0c;
     margin-left: 10px;
     font-weight: bold;
 }
 
+/* Alinhamento centralizado */
 .div-cars {
     align-items: center;
 }
 
-
-
-
+/* Definição de display, tamanho e alinhamento do container de cadastro de filme */
 .main_container {
     
     display: flex;
     flex-wrap: wrap;
     height: 100%; /* 100vh */
     width: 100%;
-    /* background: linear-gradient(120deg, #fa08087c, #4bafa59b); */
     justify-content: center;
     align-items: center;
     margin-bottom: 70px;
     background-size: cover;
-    
-
 }
 
-/* FORMULÁRIO CADASTRA FILME */
+/* Definição de tamanho, cor, borda, alinhamento e fonte do cadastro de filme */
 .cadastrar__container {
     min-height: 400px;
     width: 300px;
@@ -106,22 +101,18 @@ label{
     margin-left: 10px;
     margin-bottom: 10px;
     text-transform: uppercase;
-
 }
 
+/* Definição de margin, cor, alinhamento e fonte do "cadastrar" */
 .cadastra__title {
-
 margin-bottom: 15px;
 color: #000000;
 text-align: center;
 text-transform: uppercase;
 font-weight: bold;
-
-
-
-
 }
 
+/* Definição de tamanho, display e alinhamento do form */
 .cadastra__form {
 width: 100%;
 display: flex;
@@ -130,6 +121,7 @@ justify-content: center;
 align-items: center;
 }
 
+/* Definição de tamanho, borda, posição e margin */
 .cadastra__input {
 height: 50px;
 width: 260px;
@@ -142,10 +134,7 @@ border-radius: 8px;
 margin-bottom: 15px;
 }
 
-
-
-
-
+/* Definição de tamanho, cor, borda, alinhamento, tipo de cursor e fonte utilizada no botão */
 button.btn{
 margin-top: 15px;
 height: 50px;
@@ -153,7 +142,6 @@ width: 260px;
 padding-left: 8px;
 outline: none;
 position: relative;
-/* background: linear-gradient(120deg, #f35973, #1f5561,#ac3a4d); */
 background-color: var(--contraste-color);
 background-size: 200%;
 margin-bottom: 32px;
@@ -168,34 +156,25 @@ text-align: center;
 border: 3px solid var(--contraste-color); 
 }
 
+/* Definição de cor, borda, background do hover */
 button.btn:hover{
   background-color:var(--bg-color);
   color: var(--text-color);
   border: 3px solid var(--contraste-color); 
 }
 
+/* Definição de cor do background do hover */
 button.navbar-toggler:hover {
     background-color: #fa08087c;
 }
 
-
+/* Definição de tamanho do favicon */
 .logof{
     width: 30px;
     height: 30px;
 }
 
-.logo{
-    width: 155px;
-    height: 55px;
-}
-
-.user{
-    width: 55px;
-    border-radius: 50%;
-}
-
-
-
+/* Definição de display, tamanho e margin da classe de cards */
 .flex-materias{
     display: flex;
     flex-wrap: wrap;
@@ -203,27 +182,26 @@ button.navbar-toggler:hover {
     margin: 0 auto;
 }
 
+/* Definição de display, tamanho, alinhamento, borda, cor e margin da div de cards */
 .flex-materias > div {
    flex: 1 1 200px;
    margin: 10px;
    text-align: center;
    border-radius: 5px;
    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-   background-color: rgba(255, 255, 255, 0.52);
-   
-   
+   background-color: rgba(255, 255, 255, 0.52); 
 }
 
+/* Definição da transformação e transição do hover */
 .flex-materias > div:hover{
     transform: scale(0.7);
     transition-duration:  0.3s;
 }
 
-
+/* Definição de background, borda, margin, padding e cor dos cards já inseridos na página de filmes */
 .finalizado{
     background-color: #202020;
-    border-radius: 
-    0px 0px 10px 10px ;
+    border-radius: 0px 0px 10px 10px ;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 20px;
@@ -231,33 +209,26 @@ button.navbar-toggler:hover {
     color: white;
 }
 
-.ATIVO{
-    background-color: aqua;
-    border-radius: 
-    0px 0px 10px 10px ;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 20px;
-    padding: 5px;
-}
-
+/* Definição de fonte em negrito */
 h4{
     font-weight: bold !important;
     
 }
 
+/* Definição tamanho e borda das imagens dos cards */
 .img-materias{
     width: 220px;
     border-radius: 5px;
 }
 
+/* Alinhamento e padding do parágrafo do footer */
 footer > p {
     text-align: center;
     padding-top: 15px;
 }
 
+/* Definição de posição, tamanho, background, cor e alinhamento do footer */
 footer {
-    
     position:fixed;
     bottom: 0;
     width: 100%;
@@ -266,15 +237,15 @@ footer {
     background-color: #202020;
     color: white;
     text-align: center;
-    
-    
   }
 
+/* Tamanho e tipo de fonte do h4 */  
 .h4, h4 {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
+/* Definição de posição e tamanho do icone de e-mail */
 img.chat {
     width: 70px;
     height: 70px;
@@ -284,55 +255,55 @@ img.chat {
     z-index: 2;
 }
 
+/* Definição de margin e tamanho do ícone do github */
 .github{
     margin-top: 15px;
     width: 50px;
     height: auto;
-    
 }
 
+/* Definição de tamanho, background e borda do hover github */
 .github:hover{
    width: 70px;
    background-color: #49383878;
    border-radius: 15px;
 }
     
-
+/* Definição de margin e tamanho do ícone do Google */
 .google{
     margin-top: 15px;
     width: 50px;
-    height: auto;
-    
+    height: auto;   
 }
 
+/* Definição de tamanho, background e borda do hover google */
 .google:hover{
     width: 70px;
     background-color: #49383878;
     border-radius: 15px;
  }
 
+ /* Definição de margin e tamanho do ícone do Linkedin */
 .linkedin{
     margin-top: 15px;
     width: 50px;
     height: auto;
-    
 }
 
+/* Definição de tamanho, background e borda do hover linkedin */
 .linkedin:hover{
     width: 70px;
     background-color: #49383878;
     border-radius: 15px;
  }
 
-
+/* Definição de tamanho e borda da imagem de perfil */
 .img-Perfil{
     width: 220px;
     border-radius: 30px;
 }
 
-
-/* FORMULÁRIO DE CONTATO */
-
+/* Definição de margin, fonte e alinhamento do formulário de contato */
 .form-contato h2 {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -340,24 +311,21 @@ img.chat {
     text-align:center
 }
 
-/* LINK [X] para fechar o FORM */
-#fecharForm {
-    
+/* Definição de texto, cor e margin do link [x] para fechar o form */
+#fecharForm {   
     text-decoration: none;
     color: white;
-    margin-left: 260px;
-    
-    
+    margin-left: 260px;   
 }
 
+/* Definição de cor e alinhamento da label do formulário de contato */
 #formContato label {
     color: white;
     text-align: left;
-   
 }
 
+/* Definição posição, display, margin, padding, tamanho, background, cor, borda do formulário de contato */
 #formContato{
-  
     z-index: 3;
     display:none;
     position:absolute;
@@ -372,23 +340,21 @@ img.chat {
     border-radius: 8px;
     align-items: center;
     color:white;
-    
-    
   }
 
 
-
+/* Definição de tamanho de fonte e margin do h2 do formulário de contato */
 .form-contato h2 {
     font-size: 23px;
     margin-bottom: 13px;
 }
 
+/* Definição de tamanho do formulário de contato */
   .form-contato form {
     width: 100%;
 }
 
-
-/* Divs - Label e Input */
+/* Definição de tamanho, margin, trasformação para letras maiúsculas e em negrito */
 .item-form {
     width: 100%;
     margin: 13px 0;
@@ -396,6 +362,7 @@ img.chat {
     font-weight: bold;
 }
 
+/* Definição de display, alinhamento, margin, espaçamento de letra e tamanho da fonte da label */
 .item-form label{
     display: block;
     text-align: left;
@@ -404,6 +371,7 @@ img.chat {
     font-size: 12px;    
 }
 
+/* Definição de padding, tamanho, borda, background, cor, fonte e margin */
 .item-form select{
     padding: 15px;
     width: 100%;
@@ -415,11 +383,11 @@ img.chat {
     margin: 0;
 }
 
+/* Definição de padding, tamanho, borda, background, cor, fonte e cursor */
 .item-form input {
     padding: 15px;
     width: 100%;
     border-radius: 8px;
-    /* outline: none; */
     border: 2px solid var(--contraste-color);
     background-color: var(--bg-color-secondary);
     color: var(--text-color);
@@ -429,14 +397,12 @@ img.chat {
 }
 
 /* Animação Input */
-
 .item-form input:focus {
     border: 2px solid var(--text-color);
     box-shadow: 0 0 8px 0 white;
 }
 
-/* Botão Contato */
-
+/* Definição de padding, tamanho, borda, background, cor, fonte, margin e alinhamento do Botão Contato */
 .btn-contato {
    
     padding: 10px;
@@ -452,7 +418,6 @@ img.chat {
     font-weight: bold;
     align-items: center;
     text-align: center;
-    
 }
 
 /* Animação Botão Contato */
@@ -464,13 +429,13 @@ img.chat {
     transition: ease 0.5s;
 }
 
-
+/* Definição de borda e box-shadow do campo de mensagem */
 textarea:focus {
     border: 2px solid var(--text-color);
     box-shadow: 0 0 8px 0 white;
 }
 
-/* Estilização do campo Mensagem do form contato */
+/* Estilização do campo mensagem do form contato com padding, tamanho, borda, background, cor, fonte e cursor */
 textarea {
     padding: 15px;
     height: 100px;
